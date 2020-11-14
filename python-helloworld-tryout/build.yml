@@ -27,6 +27,7 @@ python-helloworld-tryout:
         sudo pip install coverage
         sudo pip install pytest
         sudo pip install coveralls
+
         pipenv sync --dev
         coverage erase
         coverage run -m pytest python-helloworld-tryout/tests/test.py
