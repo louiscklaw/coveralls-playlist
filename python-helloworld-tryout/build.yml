@@ -26,6 +26,7 @@ python-helloworld-tryout:
         sudo pip install coverage
         sudo pip install pytest
         sudo pip install coveralls
+        curl -sSL https://enterprise.coveralls.io/install.sh | sudo bash
 
         pushd python-helloworld-tryout
           pipenv sync --dev
