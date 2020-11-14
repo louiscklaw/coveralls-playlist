@@ -29,8 +29,8 @@ python-helloworld-tryout:
         sudo pip install coveralls
         curl -sSL https://enterprise.coveralls.io/install.sh | sudo bash
 
-        echo 'TEST_BASE_DIRECTORY'
-        echo $PWD
+        # echo 'TEST_BASE_DIRECTORY'
+        # echo $PWD
 
         pipenv sync --dev
         coverage erase
