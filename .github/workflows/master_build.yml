@@ -39,6 +39,8 @@ jobs:
             coverage erase
             coverage run -m pytest tests/test.py
             coveralls
+  
+            coverage report -m
           popd
   
 
