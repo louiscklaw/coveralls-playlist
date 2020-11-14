@@ -24,6 +24,7 @@ python-helloworld-tryout:
         export LANG=C.UTF-8
 
         sudo pip install coverage
+        sudo pip install pytest
 
         pushd python-helloworld-tryout
           pipenv sync --dev
