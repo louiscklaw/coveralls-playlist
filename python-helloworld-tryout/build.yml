@@ -1,3 +1,4 @@
+# https://coveralls-python.readthedocs.io/en/latest/usage/configuration.html
 python-helloworld-tryout:
   runs-on: ubuntu-20.04
   steps:
