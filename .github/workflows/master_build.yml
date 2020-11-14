@@ -37,7 +37,9 @@ jobs:
           sudo pip install pytest
           sudo pip install coveralls
   
-          pipenv sync
+          coverage erase
+          coverage run -m pytest python-helloworld-tryout/tests/test.py
+          coveralls
   
   
 
