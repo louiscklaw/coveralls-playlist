@@ -27,3 +27,5 @@ python-helloworld-tryout:
         sudo pip install coverage
         sudo pip install pytest
         sudo pip install coveralls
+
+        pipenv sync

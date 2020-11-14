@@ -37,6 +37,8 @@ jobs:
           sudo pip install pytest
           sudo pip install coveralls
   
+          pipenv sync
+  
   
 
   # 
