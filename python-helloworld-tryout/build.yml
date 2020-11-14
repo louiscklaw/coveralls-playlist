@@ -1,5 +1,5 @@
 python-helloworld-tryout:
-  runs-on: ubuntu-latest
+  runs-on: ubuntu-20.04
   steps:
     - name: checkout
       uses: actions/checkout@v2
@@ -9,6 +9,7 @@ python-helloworld-tryout:
         SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
+        COVERALLS_REPO_TOKEN: ${{secrets.COVERALLS_REPO_TOKEN}}
 
       run: |
         sudo apt update
