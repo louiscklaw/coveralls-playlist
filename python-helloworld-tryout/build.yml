@@ -32,5 +32,3 @@ python-helloworld-tryout:
         coverage erase
         coverage run -m pytest python-helloworld-tryout/tests/test.py
         coveralls
-
-        coverage report -m
