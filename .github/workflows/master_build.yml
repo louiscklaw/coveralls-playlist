@@ -38,14 +38,16 @@ jobs:
           sudo pip install coveralls
           curl -sSL https://enterprise.coveralls.io/install.sh | sudo bash
   
-          pushd python-helloworld-tryout
-            pipenv sync --dev
-            coverage erase
-            coverage run --source=src -m pytest tests/test.py
-            coveralls
+          echo 'TEST_BASE_DIRECTORY'
+          echo $PWD
   
-            coverage report -m
-          popd
+          pipenv sync --dev
+          coverage erase
+          coverage run --source=src -m pytest python-helloworld-tryout/tests/test.py
+          coveralls
+  
+          coverage report -m
+  
   
 
   # 
