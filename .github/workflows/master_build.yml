@@ -37,6 +37,10 @@ jobs:
           sudo pip install pytest
           sudo pip install coveralls
   
+          coverage erase
+          coverage run --source=. -m pytest python-helloworld-tryout/tests/test.py
+          coveralls
+  
   # 
   # /home/logic/_workspace/coveralls-playlist/python-helloworld-tryout/build.yml
   # 

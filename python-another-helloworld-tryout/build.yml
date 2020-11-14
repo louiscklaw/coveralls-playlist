@@ -27,3 +27,7 @@ python-another-helloworld-tryout:
         sudo pip install coverage
         sudo pip install pytest
         sudo pip install coveralls
+
+        coverage erase
+        coverage run --source=. -m pytest python-helloworld-tryout/tests/test.py
+        coveralls
