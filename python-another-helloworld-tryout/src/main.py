@@ -10,6 +10,9 @@ def helloworld():
 def helloAnotherWorld():
   print('helloAnotherWorld')
 
+def helloAnotherWorld1():
+  print('helloAnotherWorld1')
+
 
 if __name__=="__main__":
   helloworld()
