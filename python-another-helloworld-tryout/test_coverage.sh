@@ -10,6 +10,4 @@ set -ex
 
 pipenv sync --dev
 
-coverage erase
-coverage run -m pytest tests/test.py
-coveralls
+pytest tests/test.py
