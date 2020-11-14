@@ -7,7 +7,7 @@ jobs:
   # 
   # /home/logic/_workspace/coveralls-playlist/python-helloworld-tryout/build.yml
   # 
-  test_merger:
+  python-helloworld-tryout:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -70,7 +70,7 @@ jobs:
           github-build-merger/test.sh
   
   merge:
-    needs: [test_merger, test_merger]
+    needs: [python-helloworld-tryout, test_merger]
     runs-on: ubuntu-latest
     steps:
       - name: checkout

@@ -1,4 +1,4 @@
-test_merger:
+python-helloworld-tryout:
   runs-on: ubuntu-latest
   steps:
     - name: checkout
