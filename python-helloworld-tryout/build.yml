@@ -23,6 +23,8 @@ python-helloworld-tryout:
         export LC_ALL=C.UTF-8
         export LANG=C.UTF-8
 
+        sudo pip install coverage
+
         pushd python-helloworld-tryout
           pipenv sync --dev
           coverage erase
